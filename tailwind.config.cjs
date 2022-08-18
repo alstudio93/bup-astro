@@ -35,5 +35,15 @@ module.exports = {
 			'regular': 'drop-shadow(0px 4px 1px rgba(92, 100, 100, 0.1))'
 		}
 	},
-	plugins: [],
+	plugins: [require("daisyui")],
+	daisyui: {
+		styled: true,
+		themes: true,
+		base: true,
+		utils: true,
+		logs: true,
+		rtl: false,
+		prefix: "",
+		darkTheme: "dark",
+	},
 }

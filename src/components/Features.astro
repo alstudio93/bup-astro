@@ -1,0 +1,131 @@
+---
+import { Image } from "@astrojs/image/components";
+import FeatureImg1 from "../assets/featureImages/bup.png";
+import StreamyG from "../assets/featureImages/bup-streamy-g.png";
+import KeyP from "../assets/featureImages/keyp.png";
+import ThreePugs from "../assets/featureImages/bup-three-little-pugs.png";
+---
+
+<section
+    id="features"
+    class="max-w-section w-full mx-auto tracking-wide py-[120px]"
+>
+    <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] font-quicksand text-gradient text-section-h2 text-center font-medium"
+    >
+        Check Out our Features
+    </h2>
+
+    <div
+        class="feature-wrapper grid grid-cols-1 lg:grid-cols-2 justify-items-center"
+    >
+        <article
+            class="my-8 max-w-sm w-11/12 md:max-w-[500px] shadow-lg rounded-2xl py-8 px-4"
+        >
+            <div class="article-content flex flex-col items-center gap-y-7">
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] text-xl sm:text-2xl lg:text-3xl font-quicksand font-medium text-center w-[95vw]"
+                >
+                    Get creative <br /> with your links!
+                </h3>
+
+                <div
+                    class="feature-img-container max-w-[120px] md:max-w-[200px]"
+                >
+                    <Image
+                        src={FeatureImg1}
+                        alt="bup"
+                        class="w-full object-cover"
+                    />
+                </div>
+                <p
+                    class="font-quicksand text-base text-center leading-relaxed tracking-wide"
+                >
+                    Bring your links to life using our fun editing tools, block
+                    options, fonts, colors and content feeds! Then, make them
+                    pop with your favorite custom images.{" "}
+                </p>
+            </div>
+        </article>
+
+        <!-- Feature Two -->
+        <article
+            class="my-8 max-w-sm w-11/12 md:max-w-[500px] shadow-lg rounded-2xl py-8 px-4"
+        >
+            <div class="article-content flex flex-col items-center gap-y-7">
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] text-xl sm:text-2xl lg:text-3xl font-quicksand font-medium text-center w-[95vw]"
+                >
+                    BŪP's tools <br /> make links easy!
+                </h3>
+
+                <div
+                    class="feature-img-container max-w-[120px] md:max-w-[200px]"
+                >
+                    <Image src={StreamyG} alt="bup" class="w-full object-cover"
+                    />
+                </div>
+                <p
+                    class="font-quicksand text-base text-center leading-relaxed tracking-wide"
+                >
+                    Using our analytics tools, you can keep an eye on audience
+                    metrics and page performance. Our shortlink generator makes
+                    life easier for your audience by keeping your links simple!
+                </p>
+            </div>
+        </article>
+
+        <!-- Feature Three -->
+        <article
+            class="my-8 max-w-sm w-11/12 md:max-w-[500px] shadow-lg rounded-2xl py-8 px-4"
+        >
+            <div class="article-content flex flex-col items-center gap-y-7">
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] text-xl sm:text-2xl lg:text-3xl font-quicksand font-medium text-center w-[95vw]"
+                >
+                    Create multiple cards & <br /> manage all of your links.
+                </h3>
+
+                <div
+                    class="feature-img-container max-w-[120px] md:max-w-[200px]"
+                >
+                    <Image src={KeyP} alt="bup" class="w-full object-cover" />
+                </div>
+                <p
+                    class="font-quicksand text-base text-center leading-relaxed tracking-wide"
+                >
+                    Create multiple cards for your most important links and
+                    favorite things while managing it all from a single
+                    dashboard.
+                </p>
+            </div>
+        </article>
+
+        <!-- Feature Four -->
+        <article
+            class="my-8 max-w-sm w-11/12 md:max-w-[500px] shadow-lg rounded-2xl py-8 px-4"
+        >
+            <div class="article-content flex flex-col items-center gap-y-7">
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] text-xl sm:text-2xl lg:text-3xl font-quicksand font-medium text-center w-[95vw]"
+                >
+                    Show off your card <br /> with the tap of a BŪP!
+                </h3>
+
+                <div
+                    class="feature-img-container max-w-[120px] md:max-w-[200px]"
+                >
+                    <Image src={ThreePugs} alt="bup" class="w-full object-cover"
+                    />
+                </div>
+                <p
+                    class="font-quicksand text-base text-center leading-relaxed tracking-wide"
+                >
+                    Keep all of your links ready for the world to see with BŪP.
+                    Using our Smart Devices, a single tap from a phone can show
+                    off your BŪP card to anyone, instantly.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>

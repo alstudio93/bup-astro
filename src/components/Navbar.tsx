@@ -37,8 +37,8 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
   ]
 
   return (
-    <div id="stylingWrapper" className="w-full shadow-md mb-5 p-4">
-      <nav className="flex justify-between w-full px-10">
+    <div id="stylingWrapper" className="w-full shadow-md mb-5 p-4 fixed top-0 z-40 bg-white">
+      <nav className="flex justify-between w-full max-w-section mx-auto px-10">
         {children}
         <ul className="flex gap-x-3 text-sm items-center font-[Nunito] font-normal ">
           {
@@ -50,9 +50,9 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
           }
         </ul>
       </nav>
-
     </div>
   )
 }
+
 
 export default Navbar

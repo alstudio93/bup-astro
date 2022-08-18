@@ -7,6 +7,8 @@ import logo from "../assets/logo.webp";
 import Header from "../components/Header.astro";
 import MissionStatement from "../components/MissionStatement.astro";
 import Ecwid from "../components/Ecwid.astro";
+import BupVideo from "../components/BupVideo.astro";
+import Brands from "../components/Brands.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -16,9 +18,24 @@ import Ecwid from "../components/Ecwid.astro";
     <!-- Hero -->
     <Header />
     <MissionStatement />
-    <section class="max-w-section mx-auto">
+    <section class="max-w-section mx-auto pt-[120px]">
+        <div class="text-center font-medium flex flex-col gap-y-3">
+            <h2
+                class="text-section-h2 text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0]"
+            >
+                Purchasing our BŪP Smart Devices <br class="" />is as easy as
+                1-2-3!
+            </h2>
+            <ol class="flex flex-col gap-y-2 list-decimal">
+                <li>Build your BŪP Bio Card.</li>
+                <li>Order your BŪP Smart Device.</li>
+                <li>Start Networking!</li>
+            </ol>
+        </div>
         <Ecwid />
     </section>
+    <BupVideo />
+    <Brands />
 </Layout>
 <style>
     :root {

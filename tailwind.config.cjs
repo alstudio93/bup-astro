@@ -16,8 +16,8 @@ module.exports = {
 			},
 			fontSize: {
 				'hero-h1': 'clamp(2rem, 7vw, 4rem)',
-				'section-h2': 'clamp(2.4rem, 9vw, 4rem)',
-				'contact-h3': 'clamp(1.6rem, 5vw, 3rem)',
+				// 'section-h2': 'clamp(2.4rem, 9vw, 4rem)',
+				'section-h2': 'clamp(1.6rem, 9vw, 3rem)',
 				'contact-h4': 'clamp(1.1rem, 3vw, 1.6rem)'
 			},
 			maxWidth: {

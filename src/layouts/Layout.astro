@@ -24,7 +24,7 @@ const { title } = Astro.props as Props;
 	</head>
 	<body>
 		<slot />
-		<label for="my-modal" class="btn modal-button fixed bottom-5 right-5"
+		<label for="my-modal" class="btn modal-button fixed bottom-5 left-5"
 			><i class="fas fa-envelope text-base"></i>
 		</label>
 
@@ -46,6 +46,39 @@ const { title } = Astro.props as Props;
 				</div>
 			</div>
 		</div>
+		<!-- Messenger Chat Plugin Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Chat Plugin code -->
+		<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+		<script is:inline>
+			var chatbox = document.getElementById("fb-customer-chat");
+			chatbox.setAttribute("page_id", "100166648933195");
+			chatbox.setAttribute("attribution", "biz_inbox");
+		</script>
+
+		<!-- Your SDK code -->
+		<script is:inline>
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: "v14.0",
+				});
+			};
+
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src =
+					"https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, "script", "facebook-jssdk");
+		</script>
+
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 			@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");

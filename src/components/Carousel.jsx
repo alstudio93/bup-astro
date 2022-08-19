@@ -48,8 +48,8 @@ const Carousel = () => {
 
             {
                 Images.map((image) => (
-                    <div key={image.id} id={image.id} class="carousel-item w-full md:w-1/2 lg:w-3/12 pt-32">
-                        <img src={image.source} class="w-full" alt={image.alt} />
+                    <div key={image.id} id={image.id} className="carousel-item w-full md:w-1/2 lg:w-3/12 pt-32">
+                        <img src={image.source} className="w-full" alt={image.alt} />
                     </div>
                 ))
             }

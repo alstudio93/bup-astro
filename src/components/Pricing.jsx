@@ -17,7 +17,7 @@ const Pricing = () => {
 
     return (
         <section id="pricing" className='max-w-[1200px] mx-auto w-[98%] flex flex-col items-center'>
-            <h2 className='font-quicksand text-section-h2 leading-tight text-gradient text-center tracking-wide font-medium'>Choose <br className='md:hidden' /> Your Plan</h2>
+            <h2 className='font-quicksand text-section-h2 leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] text-center tracking-wide font-medium'>Choose <br className='md:hidden' /> Go Pro with BŪP®</h2>
             <div className='flex gap-5 mt-3'>
                 <button onClick={handleShowMonthly} className={`text-sm lg:text-lg shadow-lg p-2 w-[100px] lg:w-[150px] rounded-xl ${showMonthly ? 'bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0]' : ''}`}>Monthly</button>
                 <button onClick={handleShowYearly} className={`text-sm lg:text-lg shadow-lg p-2 w-[100px] lg:w-[150px] rounded-xl ${showYearly ? 'bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0]' : ''}`}>Annual</button>

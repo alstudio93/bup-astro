@@ -10,6 +10,8 @@ import Ecwid from "../components/Ecwid.astro";
 import BupVideo from "../components/BupVideo.astro";
 import Brands from "../components/Brands.astro";
 import Features from "../components/Features.astro";
+import Pricing from "../components/Pricing";
+import FAQ from "../components/FAQ";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -38,10 +40,77 @@ import Features from "../components/Features.astro";
     <BupVideo />
     <Brands />
     <Features />
+    <Pricing client:load />
+    <FAQ client:load />
 </Layout>
-<style>
+<style is:global>
     :root {
         --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
         --font-nunito: "Nunito";
+    }
+
+    .accordian-trigger {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.6rem;
+        height: 15px;
+        width: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Vertical Bar */
+    .accordian-trigger::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        transition: opacity 0.5s ease;
+        background: -webkit-linear-gradient(#18e782, #00b8ff);
+    }
+
+    /* Vertical Bar */
+    .accordian-active::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        opacity: 0;
+        background: -webkit-linear-gradient(#18e782, #00b8ff);
+    }
+
+    /* Horizontal Bar */
+    .accordian-trigger::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        transform: rotateZ(90deg);
+        background: -webkit-linear-gradient(#18e782, #00b8ff);
+    }
+
+    .accordian .content {
+        display: none;
+        border-radius: 16px;
+        overflow-y: hidden;
+        max-width: 1200px;
+        margin-right: auto;
+        line-height: 1.7rem;
+        transition: all 1s ease;
+        opacity: 0;
+    }
+
+    .accordian .accordian-active {
+        display: block;
+        max-height: 400px;
+        overflow-y: visible;
+        transition: all 1s ease;
+        opacity: 1;
     }
 </style>

@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props as Props;
+import { AiOutlineMail } from "react-icons/ai";
 ---
 
 <!DOCTYPE html>
@@ -12,12 +13,40 @@ const { title } = Astro.props as Props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerPolicy="no-referrer"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
+		<label for="my-modal" class="btn modal-button fixed bottom-5 right-5"
+			><i class="fas fa-envelope text-base"></i>
+		</label>
+
+		<input type="checkbox" id="my-modal" class="modal-toggle" />
+		<div class="modal">
+			<div class="modal-box">
+				<h3 class="font-bold text-lg text-center">
+					What would you like to ask us about?
+				</h3>
+				<div class="flex flex-col gap-y-5 items-center pt-10">
+					<a href="mailto: hello@bup.bio">General - hello@bup.bio</a>
+					<a href="mailto: design@bup.bio">Design - design@bup.bio</a>
+					<a href="mailto: enterprise@bup.bio"
+						>Enterprise - enterprise@bup.bio
+					</a>
+				</div>
+				<div class="modal-action">
+					<label for="my-modal" class="btn">Close</label>
+				</div>
+			</div>
+		</div>
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 			@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");

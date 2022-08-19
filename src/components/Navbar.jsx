@@ -1,5 +1,3 @@
-import { useState } from "react"
-import { AiOutlineMail } from "react-icons/ai"
 
 const Navbar = () => {
   const Links = [

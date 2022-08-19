@@ -1,4 +1,3 @@
-import { AiOutlineMail } from "react-icons/ai/index.js"
 const Footer = () => {
 
     return (

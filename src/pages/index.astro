@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
-
-import { Image } from "@astrojs/image/components";
+// import { Image } from "@astrojs/image/components";
 import logo from "../assets/logo.webp";
 import Header from "../components/Header.astro";
 import MissionStatement from "../components/MissionStatement.astro";
@@ -14,10 +13,9 @@ import Pricing from "../components/Pricing";
 import FAQ from "../components/FAQ";
 ---
 
+<!-- "@astrojs/image": "^0.3.4", -->
 <Layout title="Welcome to Astro.">
-    <Navbar client:visible>
-        <Image src={logo} class="w-20" />
-    </Navbar>
+    <Navbar client:visible />
     <!-- Hero -->
     <Header />
     <MissionStatement />
@@ -41,6 +39,7 @@ import FAQ from "../components/FAQ";
     <Brands />
     <Features />
     <Pricing client:load />
+
     <FAQ client:load />
 </Layout>
 <style is:global>

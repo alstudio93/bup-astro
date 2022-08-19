@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+// import { Image } from "@astrojs/image/components";
 import missionImg from "../assets/mission-img.png";
 ---
 
@@ -8,7 +8,9 @@ import missionImg from "../assets/mission-img.png";
     class="max-w-section w-[100%] pt-60 pb-14 px-2 mx-auto flex justify-center rounded-2xl"
 >
     <div class="container max-w-[840px]">
-        <Image src={missionImg} class="mx-auto mb-5 max-w-xs w-2/4 object-cover"
+        <img
+            src="../assets/mission-img.png"
+            class="mx-auto mb-5 max-w-xs w-2/4 object-cover"
         />
 
         <h2

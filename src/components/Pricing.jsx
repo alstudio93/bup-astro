@@ -23,9 +23,9 @@ const Pricing = () => {
                 <button onClick={handleShowYearly} className={`text-sm lg:text-lg shadow-lg p-2 w-[100px] lg:w-[150px] rounded-xl ${showYearly ? 'bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0]' : ''}`}>Annual</button>
             </div>
             <div className='mt-[60px] grid lg:grid-cols-2 justify-items-center'>
-                {showMonthly && <img src="../src/assets/pricing/bup-plus-monthly.webp" height="600" width="800" />}
-                {showYearly && <img src="../src/assets/pricing/bup-plus-yearly.webp" height="600" width="800" />}
-                <img src="../src/assets/pricing/bup-enterprise.webp" height="600" width="800" />
+                {showMonthly && <img src="../assets/pricing/bup-plus-monthly.webp" height="600" width="800" />}
+                {showYearly && <img src="../assets/pricing/bup-plus-yearly.webp" height="600" width="800" />}
+                <img src="../assets/pricing/bup-enterprise.webp" height="600" width="800" />
             </div>
         </section>
     )

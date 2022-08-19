@@ -1,13 +1,6 @@
-import { BsFacebook, BsLinkedin, BsInstagram } from "react-icons/bs"
-import { AiOutlineMail } from "react-icons/ai"
-import { useState } from "react";
+import { BsFacebook, BsLinkedin, BsInstagram } from "react-icons/bs/index.js"
+import { AiOutlineMail } from "react-icons/ai/index.js"
 const Footer = () => {
-    const [chooseEmail, setChooseEmail] = useState(false);
-    const bupPrimary = "hello@bup.bio"
-    const bupDesign = "design@bup.bio"
-    const bupEnterprise = "enterprise@bup.bio"
-
-
 
     return (
         <div className="pt-[150px] flex  gap-y-5 items-center pb-3 justify-center">
@@ -15,8 +8,6 @@ const Footer = () => {
             <div className="flex items-center gap-x-5">
                 <BsFacebook className="text-base" /> | <BsLinkedin className="text-base" />
                 | <BsInstagram className="text-base" /> |
-
-
 
                 <>
                     <label for="my-modal" class="btn modal-button"><AiOutlineMail
@@ -40,7 +31,6 @@ const Footer = () => {
                     </div>
                 </>
             </div>
-
         </div>
     )
 }

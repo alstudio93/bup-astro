@@ -16,7 +16,7 @@ const Pricing = () => {
     }
 
     return (
-        <section id="pricing" className='max-w-[1200px] mx-auto w-[98%] flex flex-col items-center'>
+        <section id="pricing" className='pt-[150px] max-w-[1200px] mx-auto w-[98%] flex flex-col items-center'>
             <div className='flex flex-col items-center gap-y-5'>
                 <h2 className='font-quicksand text-section-h2 leading-tight text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] text-center tracking-wide font-medium'> Go Pro with BŪP®</h2>
                 <a

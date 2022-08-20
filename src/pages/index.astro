@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.astro";
 // import { Image } from "@astrojs/image/components";
 import Header from "../components/Header.astro";
 import MissionStatement from "../components/MissionStatement.astro";
@@ -16,11 +16,11 @@ import Carousel from "../components/Carousel.astro";
 
 <!-- "@astrojs/image": "^0.3.4", -->
 <Layout title="Welcome to Astro.">
-    <Navbar client:visible />
+    <Navbar />
     <!-- Hero -->
     <Header />
     <MissionStatement />
-    <section class="max-w-section mx-auto pt-[120px]">
+    <section id="products" class="max-w-section mx-auto pt-[120px]">
         <div class="text-center font-medium flex flex-col gap-y-3">
             <h2
                 class="text-section-h2 text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0]"
@@ -51,35 +51,8 @@ import Carousel from "../components/Carousel.astro";
         --font-nunito: "Nunito";
     }
 
-    .blob {
-        width: 100%;
-        height: calc(100vh);
-        border-radius: 15rem;
-        background: radial-gradient(
-                77.73% 77.73% at 98.52% 96.25%,
-                #8bdaf9 0%,
-                rgba(128, 76, 239, 0.29) 50.52%,
-                rgba(91, 216, 216, 0) 100%
-            ),
-            radial-gradient(
-                141.73% 105.23% at 50% -7.16%,
-                #e1f8ff 0%,
-                rgba(160, 198, 255, 0) 50.73%,
-                rgba(162, 147, 255, 0) 100%
-            ),
-            radial-gradient(
-                112.27% 48.54% at 1.59% 50%,
-                rgba(130, 255, 180, 0.5) 0%,
-                rgba(123, 255, 255, 0.095) 53.91%,
-                rgba(254, 216, 255, 0) 100%
-            ),
-            linear-gradient(
-                153.07deg,
-                #91ffde 6.37%,
-                rgba(255, 230, 166, 0) 83.82%
-            );
-        background-blend-mode: normal, normal, normal, normal, normal, normal;
-        filter: blur(50px);
+    #pricing {
+        scroll-margin-top: 150px;
     }
 
     .register-btn {

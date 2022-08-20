@@ -44,7 +44,7 @@ const FAQ = () => {
     return (
         <>
             <section id="faq" className='max-w-section mx-auto w-full pt-[150px]'>
-                <h2 className='text-gradient font-quicksand text-section-h2 text-center font-medium'>FAQ</h2>
+                <h2 className='text-transparent bg-clip-text bg-gradient-to-br from-[#13bc6a] to-[#1a9dd0] font-quicksand text-section-h2 text-center font-medium'>FAQ</h2>
 
                 {
                     FAQItem.map((faq, index) => (

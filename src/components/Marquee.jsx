@@ -35,9 +35,10 @@ const Images = () => {
 const MarqueeComp = () => {
     return (
         <Marquee className="py-2 px-4 mt-10 flex gap-x-10 grayscale bg-[#eaeaea42]">
-            <Images />
+            Hello
         </Marquee>
     )
 }
 
 export default MarqueeComp
+{/* <Images /> */ }

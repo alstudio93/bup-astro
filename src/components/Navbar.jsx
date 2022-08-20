@@ -42,7 +42,7 @@ const Navbar = () => {
     <div id="stylingWrapper" className="w-full shadow-md mb-5 p-4 fixed top-0 z-40 bg-white">
       <nav className="flex justify-between items-center w-full max-w-section mx-auto ">
         <img src="/assets/logo.webp" className="w-20" />
-        <ul className={` lg:flex gap-x-3  text-center font-[Nunito] font-normal ${open ? "flex flex-col  gap-y-8 fixed top-14 left-0 right-0 min-h-screen bg-[#ffffff] text-base pt-20 overflow-y-scroll pb-[120px]" : "hidden text-sm"}`}>
+        <ul className={` lg:flex gap-x-3 text-center font-[Nunito] font-normal  " ${open ? "flex flex-col  gap-y-8 fixed top-14 left-0 right-0 bottom-0 min-h-screen bg-[#ffffff] text-base pt-20 pb-[120px] overflow-y-scroll" : "hidden text-sm"}`}>
           {
             Links.map((link) => (
               <div>

@@ -35,11 +35,13 @@ import img1 from "/assets/brandImages/bwim-logo.webp";
 
 const MarqueeComp = () => {
     return (
-        <Marquee>
-            <div>
-                <img src={img1} />
-            </div>
-        </Marquee>
+        <div>
+            <Marquee>
+                <div>
+                    <img src={img1} />
+                </div>
+            </Marquee>
+        </div>
     )
 }
 

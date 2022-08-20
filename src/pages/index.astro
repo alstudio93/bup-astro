@@ -3,15 +3,17 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 // import { Image } from "@astrojs/image/components";
 import Header from "../components/Header.astro";
+import MarqueeComp from "../components/Marquee";
 import MissionStatement from "../components/MissionStatement.astro";
 import Ecwid from "../components/Ecwid.astro";
 import BupVideo from "../components/BupVideo.astro";
-import Brands from "../components/Brands.astro";
+import Brands from "../components/Brands";
 import Features from "../components/Features.astro";
 import Pricing from "../components/Pricing";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer.astro";
 import Carousel from "../components/Carousel.astro";
+import FeaturedCards from "../components/FeaturedCards.astro";
 ---
 
 <!-- "@astrojs/image": "^0.3.4", -->
@@ -20,6 +22,7 @@ import Carousel from "../components/Carousel.astro";
     <!-- Hero -->
     <Header />
     <MissionStatement />
+    <MarqueeComp client:load />
     <section id="products" class="max-w-section mx-auto pt-[120px]">
         <div class="text-center font-medium flex flex-col gap-y-3">
             <h2
@@ -36,14 +39,15 @@ import Carousel from "../components/Carousel.astro";
         </div>
         <Ecwid />
     </section>
-    <Carousel />
+    <FeaturedCards />
+    <!-- <Carousel /> -->
     <BupVideo />
-    <Brands />
+    <!-- <Brands client:visible /> -->
     <Features />
-    <Pricing client:load />
+    <Pricing client:visible />
 
-    <FAQ client:load />
-    <Footer client:load />
+    <FAQ client:visible />
+    <Footer />
 </Layout>
 <style is:global>
     :root {

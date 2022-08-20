@@ -38,7 +38,7 @@ const MarqueeComp = () => {
         <div>
             <Marquee>
                 <div>
-                    <img src={img1} />
+                    <img src="/assets/brandImages/century-21-be3.webp" />
                 </div>
             </Marquee>
         </div>
@@ -46,4 +46,3 @@ const MarqueeComp = () => {
 }
 
 export default MarqueeComp
-{/* <Images /> */ }

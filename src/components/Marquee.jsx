@@ -22,19 +22,19 @@ const Images = () => {
         },
     ]
     return (
-        <div className=" py-2 px-4 mt-10 flex gap-x-10 grayscale bg-[#eaeaea42]">
+        <>
             {
                 imageArray.map((img) => (
                     <img key={img.src} className="w-[150px] object-contain cursor-pointer" src={img.src} />
                 ))
             }
-        </div>
+        </>
     )
 }
 
 const MarqueeComp = () => {
     return (
-        <Marquee>
+        <Marquee className="py-2 px-4 mt-10 flex gap-x-10 grayscale bg-[#eaeaea42]">
             <Images />
         </Marquee>
     )

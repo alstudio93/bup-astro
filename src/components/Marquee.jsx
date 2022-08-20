@@ -35,9 +35,7 @@ const Images = () => {
 const MarqueeComp = () => {
     return (
         <Marquee>
-            <img src="../assets/brandImages/bwim-logo.webp" />
-            <img src="../assets/brandImages/century-21-be3-logo.webp" />
-            <img src="../assets/brandImages/century-21-be3.webp" />
+            Hello
         </Marquee>
     )
 }

@@ -34,8 +34,10 @@ const Images = () => {
 
 const MarqueeComp = () => {
     return (
-        <Marquee className="py-2 px-4 mt-10 flex gap-x-10 grayscale bg-[#eaeaea42]">
-            Hello
+        <Marquee>
+            <img src="../assets/brandImages/bwim-logo.webp" />
+            <img src="../assets/brandImages/century-21-be3-logo.webp" />
+            <img src="../assets/brandImages/century-21-be3.webp" />
         </Marquee>
     )
 }

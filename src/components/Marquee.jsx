@@ -1,41 +1,41 @@
 import Marquee from "react-fast-marquee";
 
+const Images = () => {
+    const imageArray = [
+        {
+            src: "../assets/brandImages/bwim-logo.webp",
+        },
+        {
+            src: "../assets/brandImages/century-21-be3-logo.webp",
+        },
+        {
+            src: "../assets/brandImages/century-21-be3.webp",
+        },
+        {
+            src: "../assets/brandImages/dwntwn-social.webp",
+        },
+        {
+            src: "../assets/brandImages/the-switzer-hych-group-logo.webp",
+        },
+        {
+            src: "../assets/brandImages/ut-logo.webp",
+        },
+    ]
+    return (
+        <div className=" py-2 px-4 mt-10 flex gap-x-10 grayscale bg-[#eaeaea42]">
+            {
+                imageArray.map((img) => (
+                    <img key={img.src} className="w-[150px] object-contain cursor-pointer" src={img.src} />
+                ))
+            }
+        </div>
+    )
+}
+
 const MarqueeComp = () => {
     return (
         <Marquee>
-            <div
-                class=" py-2 px-4 mt-10 flex gap-x-10 grayscale bg-[#eaeaea42]"
-            >
-                <img
-                    class="w-[150px] object-contain cursor-pointer"
-                    src="../assets/brandImages/bwim-logo.webp"
-                />
-
-                <img
-                    class="w-[150px] object-contain cursor-pointer"
-                    src="../assets/brandImages/century-21-be3-logo.webp"
-                />
-
-                <img
-                    class="w-[150px] object-contain cursor-pointer"
-                    src="../assets/brandImages/century-21-be3.webp"
-                />
-
-                <img
-                    class="w-[150px] object-contain cursor-pointer"
-                    src="../assets/brandImages/dwntwn-social.webp"
-                />
-
-                <img
-                    class="w-[150px] object-contain cursor-pointer"
-                    src="../assets/brandImages/the-switzer-hych-group-logo.webp"
-                />
-
-                <img
-                    class="w-[150px] object-contain cursor-pointer"
-                    src="../assets/brandImages/ut-logo.webp"
-                />
-            </div>
+            <Images />
         </Marquee>
     )
 }

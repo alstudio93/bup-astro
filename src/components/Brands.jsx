@@ -1,5 +1,5 @@
 // import { Image } from "@astrojs/image/components";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 
 const Brands = () => {
     return (

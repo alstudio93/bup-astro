@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 // import { Image } from "@astrojs/image/components";
 import Header from "../components/Header.astro";
-import MarqueeComp from "../components/Marquee";
 import MissionStatement from "../components/MissionStatement.astro";
 import Ecwid from "../components/Ecwid.astro";
 import BupVideo from "../components/BupVideo.astro";
@@ -14,6 +13,8 @@ import FAQ from "../components/FAQ";
 import Footer from "../components/Footer.astro";
 // import Carousel from "../components/Carousel.astro";
 import FeaturedCards from "../components/FeaturedCards.astro";
+
+import Testing from "../components/testing.astro";
 ---
 
 <!-- "@astrojs/image": "^0.3.4", -->
@@ -22,7 +23,7 @@ import FeaturedCards from "../components/FeaturedCards.astro";
     <!-- Hero -->
     <Header />
     <MissionStatement />
-    <MarqueeComp client:load />
+    <Testing />
 
     <section id="products" class="max-w-section mx-auto pt-[120px]">
         <div class="text-center font-medium flex flex-col gap-y-3">
@@ -45,7 +46,7 @@ import FeaturedCards from "../components/FeaturedCards.astro";
     <BupVideo />
     <!-- <Brands client:visible /> -->
     <Features />
-    <Pricing client:visible />
+    <Pricing client:load />
 
     <FAQ client:visible />
     <Footer />

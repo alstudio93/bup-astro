@@ -1,0 +1,42 @@
+---
+---
+
+<div class="relative flex w-screen">
+    <div class="absolute flex gap-x-10 brands">
+        <img class="w-20" src="/assets/brandImages/bwim-logo.webp" />
+        <img class="w-20" src="/assets/brandImages/ut-logo.webp" />
+        <img class="w-20" src="/assets/brandImages/century-21-be3-logo.webp" />
+        <img class="w-20" src="/assets/brandImages/century-21-be3.webp" />
+        <img class="w-20" src="/assets/brandImages/dwntwn-social.webp" />
+        <img
+            class="w-20"
+            src="/assets/brandImages/the-switzer-hych-group-logo.webp"
+        />
+        <img class="w-20" src="/assets/brandImages/charrismusic.png" />
+    </div>
+
+    <!-- <img class="" src="/assets/brandImages/bwim-logo.webp" /> -->
+
+    <style>
+        .brands {
+            position: absolute;
+            overflow: hidden;
+            height: 100px;
+            animation: move 40s linear infinite;
+            left: 100%;
+        }
+
+        .brands img {
+            object-fit: contain;
+        }
+
+        @-webkit-keyframes move {
+            from {
+                left: -50%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+</div>

@@ -55,6 +55,7 @@ const FAQ = () => {
                             toggle={toggle}
                             clicked={clicked}
                             key={faq.title}
+
                         />
                     ))
                 }

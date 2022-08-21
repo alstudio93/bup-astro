@@ -54,8 +54,8 @@ const Carousel = () => {
                 ))
             } */}
             {
-                Images.map((image) => (
-                    <div key={image.source} id={image.id} className="flex justify-center gap-y-10">
+                Images.map((image, index) => (
+                    <div key={index} id={image.id} className="flex justify-center gap-y-10">
                         <img src={image.source} className="w-1/2 md:w-3/4 xl:w-1/2" alt={image.alt} />
                     </div>
                 ))

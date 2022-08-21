@@ -8,7 +8,7 @@ const Accordian = ({
 
     return (
         <div
-            className='accordian max-w-3xl py-2 px-5 my-5 mx-auto flex flex-col gap-x-5 items-center shadow-lg rounded-2xl'
+            className='accordian max-w-3xl py-2 px-5 my-5 mx-auto flex flex-col gap-x-5 items-center shadow-lg dark:shadow-none dark:border dark:border-slate-200 rounded-2xl'
         >
 
             <div className='py-5 flex justify-between items-center w-full cursor-pointer' onClick={() => toggle(index)}>
